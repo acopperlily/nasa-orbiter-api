@@ -58,5 +58,5 @@ app.get('/api/:vehicle', (req, res) => {
 });
 
 app.listen(process.env.PORT || PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Launching server on port ${PORT}`);
 });
