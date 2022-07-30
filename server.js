@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const PORT = 1981;
+
+app.use(cors());
 
 const vehicles = {
   "columbia": {
