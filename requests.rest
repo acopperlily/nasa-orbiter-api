@@ -8,3 +8,6 @@ GET http://localhost:1981/api/columbia
 
 ###
 GET http://localhost:1981/api/Discovery
+
+###
+GET http://localhost:1981/api/cHaLlEnGeR

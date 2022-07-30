@@ -40,7 +40,9 @@ const vehicles = {
 };
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  app.set('view engine', 'html');
+  app.use(express.static('public'));
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.get('/api', (req, res) => {

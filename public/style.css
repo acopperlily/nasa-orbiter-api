@@ -8,4 +8,16 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: black;
   color: rgb(90, 90, 164);
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+h2 {
+  padding: 20px;
 }
