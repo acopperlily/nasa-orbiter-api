@@ -1,0 +1,10 @@
+GET http://localhost:1981
+
+###
+GET http://localhost:1981/api
+
+###
+GET http://localhost:1981/api/columbia
+
+###
+GET http://localhost:1981/api/Discovery
