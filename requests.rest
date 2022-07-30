@@ -11,3 +11,15 @@ GET http://localhost:1981/api/Discovery
 
 ###
 GET http://localhost:1981/api/cHaLlEnGeR
+
+###
+GET https://nasa-orbiter-api.herokuapp.com/
+
+###
+GET https://nasa-orbiter-api.herokuapp.com/api/atLantIs
+
+###
+GET https://nasa-orbiter-api.herokuapp.com/api/ENDEAVOUR
+
+###
+GET https://nasa-orbiter-api.herokuapp.com/api/enteRprise  
