@@ -11,6 +11,118 @@
 <body>
   <h1>Space Shuttle Orbiters</h1>
   <h2>Get info on Atlantis, Challenger, Columbia, Discovery, Endeavour, and Enterprise</h2>
-  <p>Usage: https://nasa-orbiter-api.herokuapp.com/api/(name of orbiter) </p>
+
+  <h3>Request</h3>
+  <code>GET https://nasa-orbiter-api.herokuapp.com/api </code>
+
+  <h3>Query Parameter</h3>
+  <code>/[name]</code>
+
+  <h3>Response</h3>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Key</th>
+        <th scope="col">Type</th>
+        <th scope="col">Description</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><code>name</code></th>
+        <td>string</td>
+        <td>Name of orbiter vehicle</td>
+        <td>"Discovery"</td>
+      </tr>
+      <tr>
+        <th><code>serialNumber</code></th>
+        <td>string</td>
+        <td>Serial number</td>
+        <td>"OV-103"</td>
+      </tr>
+      <tr>
+        <th><code>numberOfFlights</code></th>
+        <td>int</td>
+        <td>Total number of flights</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <th><code>numberOfOrbits</code></th>
+        <td>int</td>
+        <td>Total number of orbits around Earth</td>
+        <td>5830</td>
+      </tr>
+      <tr>
+        <th><code>firstMission</code></th>
+        <td>string</td>
+        <td>First mission (Space Transportation System)</td>
+        <td>"STS-41-D"</td>
+      </tr>
+      <tr>
+        <th><code>lastMission</code></th>
+        <td>string</td>
+        <td>Last mission (Space Transportation System)</td>
+        <td>"STS-133"</td>
+      </tr>
+      <tr>
+        <th><code>firstLaunchDate</code></th>
+        <td>string</td>
+        <td>Date of first launch in Month D, Yr format</td>
+        <td>"August 30, 1984"</td>
+      </tr>
+      <tr>
+        <th><code>firstLandingDate</code></th>
+        <td>string</td>
+        <td>Date of first landing in Month D, Yr format</td>
+        <td>"September 5, 1984"</td>
+      </tr>
+      <tr>
+        <th><code>lastLaunchDate</code></th>
+        <td>string</td>
+        <td>Date of last launch in Month D, Yr format</td>
+        <td>"February 24, 2011"</td>
+      </tr>
+      <tr>
+        <th><code>lastLandingDate</code></th>
+        <td>string</td>
+        <td>Date of last landing in Month D, Yr format</td>
+        <td>"March 9, 2011"</td>
+      </tr>
+      <tr>
+        <th><code>milesTraveled</code></th>
+        <td>int</td>
+        <td>Total miles traveled</td>
+        <td>148221675</td>
+      </tr>
+      <tr>
+        <th><code>flightHours</code></th>
+        <td>int</td>
+        <td>Total number of hours in flight</td>
+        <td>8783</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Example Query</h3>
+  <code>https://nasa-orbiter-api/herokuapp.com/api/atlantis</code>
+
+  <h3>Example Response</h3>
+  <pre>
+{
+  "name": "Atlantis",
+  "serialNumber": "OV-104",
+  "numberOfFlights": 33,
+  "numberOfOrbits": 4848,
+  "firstMission": "STS-51-J",
+  "lastMission": "STS-135",
+  "firstLaunchDate": "October 3, 1985",
+  "firstLandingDate": "October 7, 1985",
+  "lastLaunchDate": "July 8, 2011",
+  "lastLandingDate": "July 21, 2011",
+  "milesTraveled": 125935769,
+  "flightHours": 7358
+}
+  </pre>
 </body>
 </html>
